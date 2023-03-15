@@ -24,7 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 9,
+  "id": 6,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -113,7 +113,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "rate(container_cpu_usage_seconds_total{namespace=\"asr-batch-dev\",container=\"asr-batch\",instance=~\"aks-gpularge-.*\"}[1m])*100",
+          "expr": "rate(container_cpu_usage_seconds_total{namespace=\"\", pod=~\".*\", container=~\".*\",instance=~\"aks-gpularge-.*\"}[1m])*100",
           "instant": true,
           "key": "Q-9b292b6f-894f-44e3-a28d-c629530c92f2-0",
           "legendFormat": "__auto",
@@ -172,7 +172,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "9.3.1",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -180,20 +180,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "sum(container_memory_working_set_bytes{namespace=\"asr-batch-dev\", pod=\"asr-batch-cdfb5d98d-mxq88\", image!=\"\"}) * 100 / sum(kube_pod_container_resource_requests{namespace=\"asr-batch-dev\", pod=\"asr-batch-cdfb5d98d-mxq88\", unit=\"byte\"})",
-          "hide": true,
-          "interval": "1s",
-          "legendFormat": "__auto",
-          "range": true,
-          "refId": "A"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
-          },
-          "editorMode": "code",
-          "expr": "(sum(container_memory_working_set_bytes{namespace=\"asr-batch-dev\", pod=\"asr-batch-cdfb5d98d-hf7gc\", image!=\"\"}) * 100) / sum(kube_pod_container_resource_requests{namespace=\"asr-batch-dev\", pod=\"asr-batch-cdfb5d98d-hf7gc\", unit=\"byte\"})",
+          "expr": "(sum(container_memory_working_set_bytes{namespace=~\".*\", pod=~\".*\", image!=\"\"}) * 100) / sum(kube_pod_container_resource_requests{namespace=~\".*\", pod=~\".*\", unit=\"byte\"})",
           "hide": false,
           "interval": "1s",
           "legendFormat": "__auto",
@@ -287,8 +274,8 @@
             "type": "prometheus",
             "uid": "PBFA97CFB590B2093"
           },
-          "editorMode": "builder",
-          "expr": "DCGM_FI_DEV_GPU_UTIL{namespace=\"asr-batch-dev\"}",
+          "editorMode": "code",
+          "expr": "DCGM_FI_DEV_GPU_UTIL{namespace=~\".*\", pod=~\".*\"}",
           "key": "Q-f59013ec-2db8-4276-82d3-befb17624f05-0",
           "range": true,
           "refId": "A"
@@ -298,16 +285,17 @@
       "type": "timeseries"
     }
   ],
-  "refresh": false,
-  "schemaVersion": 37,
+  "refresh": "",
+  "revision": 1,
+  "schemaVersion": 38,
   "style": "dark",
   "tags": [],
   "templating": {
     "list": []
   },
   "time": {
-    "from": "2023-02-16T06:51:10.000Z",
-    "to": "2023-02-16T11:38:02.000Z"
+    "from": "now-3h",
+    "to": "now"
   },
   "timepicker": {
     "refresh_intervals": [
@@ -326,6 +314,6 @@
   "timezone": "",
   "title": "Metrics",
   "uid": "1Cmh_9T4z",
-  "version": 6,
+  "version": 1,
   "weekStart": ""
 }
