@@ -1,0 +1,615 @@
+Starting: Run script ci.bat
+==============================================================================
+Task         : Batch script
+Description  : Run a Windows command or batch script and optionally allow it to change the environment
+Version      : 1.198.0
+Author       : Microsoft Corporation
+Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/batch-script
+==============================================================================
+/c "D:\a\1\s\ci.bat pack-ylo"
+YLO CI Tool
+Preparing to run build script...
+Running build script...
+The assembly 'Cake.FileHelpers, Version=3.2.0.0, Culture=neutral, PublicKeyToken=null' 
+is referencing an older version of Cake.Core (0.33.0). 
+For best compatibility it should target Cake.Core version 1.0.0.
+D:/a/1/s/Build/YLO/BuildScripts/build.utils.cake(249,5): warning CS0162: Unreachable code detected
+
+========================================
+Command
+========================================
+
+========================================
+gitpull
+========================================
+Displaying any modified files:
+Pulling from source repository... 
+fatal: Cannot prompt because user interactivity has been disabled.
+fatal: Cannot prompt because user interactivity has been disabled.
+fatal: could not read Password for 'https://Stenograph@dev.azure.com/Stenograph/YesLaw/_git/YLO': terminal prompts disabled
+
+========================================
+build-ylo
+========================================
+Restoring YLO.All:
+MSBuild auto-detection: using msbuild version '16.11.2.50704' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'.
+Restoring NuGet package CacheManager.Core.1.1.1.
+Restoring NuGet package CacheManager.StackExchange.Redis.1.1.1.
+  GET https://api.nuget.org/v3-flatcontainer/cachemanager.core/1.1.1/cachemanager.core.1.1.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/cachemanager.stackexchange.redis/1.1.1/cachemanager.stackexchange.redis.1.1.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/cachemanager.stackexchange.redis/1.1.1/cachemanager.stackexchange.redis.1.1.1.nupkg 61ms
+  OK https://api.nuget.org/v3-flatcontainer/cachemanager.core/1.1.1/cachemanager.core.1.1.1.nupkg 62ms
+Installed CacheManager.StackExchange.Redis 1.1.1 from https://api.nuget.org/v3/index.json with content hash 6FjF0Q6umIdR5RCU+34OtG10pHwzXFN40ok2HY0reOZZxaFhxeh3ppNABVKA/bvpMpCIzUMqH1/jRS2mLtFOFA==.
+Adding package 'CacheManager.StackExchange.Redis.1.1.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'CacheManager.StackExchange.Redis.1.1.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Installed CacheManager.Core 1.1.1 from https://api.nuget.org/v3/index.json with content hash ipwk9nNXl62JDZRzokI0wFmq5Zmpt3TYLDYiic0bpj3sNUxtfNcv9JzMIcU9XYzD69RXSdjbQVz+71QNbijqXw==.
+Restoring NuGet package CacheManager.SystemRuntimeCaching.1.1.1.
+Adding package 'CacheManager.Core.1.1.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+  GET https://api.nuget.org/v3-flatcontainer/cachemanager.systemruntimecaching/1.1.1/cachemanager.systemruntimecaching.1.1.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/cachemanager.systemruntimecaching/1.1.1/cachemanager.systemruntimecaching.1.1.1.nupkg 6ms
+Added package 'CacheManager.Core.1.1.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package CommonServiceLocator.1.3.0.
+  GET https://api.nuget.org/v3-flatcontainer/commonservicelocator/1.3.0/commonservicelocator.1.3.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/commonservicelocator/1.3.0/commonservicelocator.1.3.0.nupkg 5ms
+Installed CacheManager.SystemRuntimeCaching 1.1.1 from https://api.nuget.org/v3/index.json with content hash 5V42bVqtyqKKGDtOMgQvlvEHwqukkqWcgSGCRWZPPPjvm7cNHG8M0cEGISKKo0sF9dNbYg6FsGCe5uZyQfua5A==.
+Adding package 'CacheManager.SystemRuntimeCaching.1.1.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'CacheManager.SystemRuntimeCaching.1.1.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package CsvHelper.12.1.0.
+  GET https://api.nuget.org/v3-flatcontainer/csvhelper/12.1.0/csvhelper.12.1.0.nupkg
+Installed CommonServiceLocator 1.3 from https://api.nuget.org/v3/index.json with content hash fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==.
+  OK https://api.nuget.org/v3-flatcontainer/csvhelper/12.1.0/csvhelper.12.1.0.nupkg 5ms
+Adding package 'CommonServiceLocator.1.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'CommonServiceLocator.1.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package DotNetZip.1.13.0.
+  GET https://api.nuget.org/v3-flatcontainer/dotnetzip/1.13.0/dotnetzip.1.13.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/dotnetzip/1.13.0/dotnetzip.1.13.0.nupkg 5ms
+Installed CsvHelper 12.1.0 from https://api.nuget.org/v3/index.json with content hash xiqj0fZfrQrxsN6CdW+u2YNKoUE67q601rb0EmWTSWEjRKJuMPFmj/nb9jnnSO3/rHPFKzWfM/g8MoBJzf/N9g==.
+Adding package 'CsvHelper.12.1.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'CsvHelper.12.1.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package elmah.1.2.2.
+  GET https://api.nuget.org/v3-flatcontainer/elmah/1.2.2/elmah.1.2.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/elmah/1.2.2/elmah.1.2.2.nupkg 5ms
+Installed DotNetZip 1.13.0 from https://api.nuget.org/v3/index.json with content hash XhW/UHoPYc3DriU4rayHs0cV2EeyUBva22gZdhK9UXE7fbQNKK87CRvANA4YFdfQez3YUHc+PoA99Zg5Suq2Sw==.
+Adding package 'DotNetZip.1.13.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Installed elmah 1.2.2 from https://api.nuget.org/v3/index.json with content hash UGnc/NHz0SHNc5eWaW+NynuYWFn+KM2NEoBJbavDt6s8pSBZQgDkKaaqvEV43TiF5GB1uDVjXLx1yjdfP78UPQ==.
+Adding package 'elmah.1.2.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'elmah.1.2.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package elmah.corelibrary.1.2.2.
+  GET https://api.nuget.org/v3-flatcontainer/elmah.corelibrary/1.2.2/elmah.corelibrary.1.2.2.nupkg
+Added package 'DotNetZip.1.13.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Exceptionless.4.3.2027.
+  GET https://api.nuget.org/v3-flatcontainer/exceptionless/4.3.2027/exceptionless.4.3.2027.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/elmah.corelibrary/1.2.2/elmah.corelibrary.1.2.2.nupkg 7ms
+  OK https://api.nuget.org/v3-flatcontainer/exceptionless/4.3.2027/exceptionless.4.3.2027.nupkg 6ms
+Installed elmah.corelibrary 1.2.2 from https://api.nuget.org/v3/index.json with content hash OEx4ds9r2bw2/45VZwfw11lLv4y+mC2FUZxp7LsjmauFxj92K1kx8hafSBvls+V9s0WH0wv84B1LfWN/EaGfkg==.
+Adding package 'elmah.corelibrary.1.2.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'elmah.corelibrary.1.2.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Exceptionless.NLog.4.3.2027.
+  GET https://api.nuget.org/v3-flatcontainer/exceptionless.nlog/4.3.2027/exceptionless.nlog.4.3.2027.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/exceptionless.nlog/4.3.2027/exceptionless.nlog.4.3.2027.nupkg 76ms
+Installed Exceptionless.NLog 4.3.2027 from https://api.nuget.org/v3/index.json with content hash CEMq2aBAdZHV9k7iX9U3wgT57CSCk9lVsMwwdr6AiC4ZKhG+zXFxTu7bPsUzBY2MbJ0p8yDf/k8T3bi3EMMrYQ==.
+Adding package 'Exceptionless.NLog.4.3.2027' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Exceptionless.NLog.4.3.2027' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.diagnostics.tracing.eventsource.redist/1.1.28/microsoft.diagnostics.tracing.eventsource.redist.1.1.28.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.diagnostics.tracing.eventsource.redist/1.1.28/microsoft.diagnostics.tracing.eventsource.redist.1.1.28.nupkg 3ms
+Installed Microsoft.Diagnostics.Tracing.EventSource.Redist 1.1.28 from https://api.nuget.org/v3/index.json with content hash pn07chRDMdeug9sHbuNlAEZG8ZN3zKgE07IMJG7qPeoQlX6ve01rKTwknKCY/2CVacRP78ONzykV8am84gxc2g==.
+Adding package 'Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Newtonsoft.Json.12.0.2.
+  GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg 6ms
+Installed Exceptionless 4.3.2027 from https://api.nuget.org/v3/index.json with content hash b+XSF/qEmiMbUyAaO42kfbBBMmbFGaKsUoXyfiQ9uY3rVqk5cP49KN3U3G14yESg2404TaktcWseJ3TG5ch+3g==.
+Adding package 'Exceptionless.4.3.2027' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Exceptionless.4.3.2027' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package NLog.4.5.11.
+  GET https://api.nuget.org/v3-flatcontainer/nlog/4.5.11/nlog.4.5.11.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nlog/4.5.11/nlog.4.5.11.nupkg 5ms
+Installed Newtonsoft.Json 12.0.2 from https://api.nuget.org/v3/index.json with content hash rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==.
+Adding package 'Newtonsoft.Json.12.0.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Newtonsoft.Json.12.0.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package NLog.Extended.4.5.11.
+  GET https://api.nuget.org/v3-flatcontainer/nlog.extended/4.5.11/nlog.extended.4.5.11.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nlog.extended/4.5.11/nlog.extended.4.5.11.nupkg 5ms
+Installed NLog.Extended 4.5.11 from https://api.nuget.org/v3/index.json with content hash sDDkyL8nZDkCNr+PTAJIfXSMgjO6elXODIHcskqmR8jlYJ78LDEhhg+Y/qA7DeFF5HnntrPX7MANCP+R0gEC9w==.
+Adding package 'NLog.Extended.4.5.11' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'NLog.Extended.4.5.11' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package NLog.Web.4.7.0.
+  GET https://api.nuget.org/v3-flatcontainer/nlog.web/4.7.0/nlog.web.4.7.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nlog.web/4.7.0/nlog.web.4.7.0.nupkg 7ms
+Installed NLog.Web 4.7.0 from https://api.nuget.org/v3/index.json with content hash vD6DP5LUxUDbBaMgb0nJyLXkZ1ATiduKRhASOrbqPCyrcHYs9hBMQdW/OyIPAivaXfIzjf77UChUdV/JXpLraA==.
+Adding package 'NLog.Web.4.7.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'NLog.Web.4.7.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package OpenPop.NET.2.0.6.1120.
+  GET https://api.nuget.org/v3-flatcontainer/openpop.net/2.0.6.1120/openpop.net.2.0.6.1120.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/openpop.net/2.0.6.1120/openpop.net.2.0.6.1120.nupkg 7ms
+Installed OpenPop.NET 2.0.6.1120 from https://api.nuget.org/v3/index.json with content hash NKgNRQAMJOTSnefCt3yfoQ8fPYml46Mwzq6m9OPwzmtKbXLXptUKaMnUjOoISpSowv8EclRVuv6DJXtZPJfcKQ==.
+Adding package 'OpenPop.NET.2.0.6.1120' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'OpenPop.NET.2.0.6.1120' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package ServiceStack.3.9.70.
+Installed NLog 4.5.11 from https://api.nuget.org/v3/index.json with content hash Yni/XrDfbEhaCSXJsDkmW/n5AunhOxZ7OKKb+0U1I1/d8ZaKt3Jjzf20g/xPiKljmYuZKYqI5iI34g138kK8UQ==.
+Adding package 'NLog.4.5.11' to folder 'D:\a\1\s\Source\Solutions\packages'
+  GET https://api.nuget.org/v3-flatcontainer/servicestack/3.9.70/servicestack.3.9.70.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/servicestack/3.9.70/servicestack.3.9.70.nupkg 8ms
+Added package 'NLog.4.5.11' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package ServiceStack.Common.3.9.70.
+  GET https://api.nuget.org/v3-flatcontainer/servicestack.common/3.9.70/servicestack.common.3.9.70.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/servicestack.common/3.9.70/servicestack.common.3.9.70.nupkg 90ms
+Installed ServiceStack 3.9.70 from https://api.nuget.org/v3/index.json with content hash V1UHA7Aa06eqFggGhqf1f8ZzGNkPkzBgBrbS2it3Ay1UfdBjvzZEfx0DHW9dW57XQSxjjwcwwzvORTdTNvXJfA==.
+Adding package 'ServiceStack.3.9.70' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'ServiceStack.3.9.70' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package ServiceStack.Redis.3.9.70.
+  GET https://api.nuget.org/v3-flatcontainer/servicestack.redis/3.9.70/servicestack.redis.3.9.70.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/servicestack.redis/3.9.70/servicestack.redis.3.9.70.nupkg 6ms
+Installed ServiceStack.Redis 3.9.70 from https://api.nuget.org/v3/index.json with content hash c8W2MJdagJCKXNWatDdH3xm1afUjVmnGgXx6x+i/9NAzXEasiBcoJCNJY+BAKXbOQYNm5yd628xqKZWGEhrUzg==.
+Adding package 'ServiceStack.Redis.3.9.70' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'ServiceStack.Redis.3.9.70' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package ServiceStack.Text.3.9.70.
+  GET https://api.nuget.org/v3-flatcontainer/servicestack.text/3.9.70/servicestack.text.3.9.70.nupkg
+Installed ServiceStack.Common 3.9.70 from https://api.nuget.org/v3/index.json with content hash QSdz4qIaCcs/nUMu0Hc6TvCB6l+71gnrnp/NWh2sl/XttBgXsy6E1vwzBmrSH8rRAl/JVBMJVpxsuLQptBpyYg==.
+Adding package 'ServiceStack.Common.3.9.70' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'ServiceStack.Common.3.9.70' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package SimpleInjector.4.4.2.
+  GET https://api.nuget.org/v3-flatcontainer/simpleinjector/4.4.2/simpleinjector.4.4.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/simpleinjector/4.4.2/simpleinjector.4.4.2.nupkg 6ms
+  OK https://api.nuget.org/v3-flatcontainer/servicestack.text/3.9.70/servicestack.text.3.9.70.nupkg 76ms
+Installed ServiceStack.Text 3.9.70 from https://api.nuget.org/v3/index.json with content hash otRymdxTqFaClEfYRZtw3zEQj0pbqpbsREQ0c/v198fcCZgvTEHmy3tI9hoZW2F87SJRBm5HqsV0bewCCcWYlw==.
+Adding package 'ServiceStack.Text.3.9.70' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'ServiceStack.Text.3.9.70' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package StackExchange.Redis.StrongName.1.2.6.
+  GET https://api.nuget.org/v3-flatcontainer/stackexchange.redis.strongname/1.2.6/stackexchange.redis.strongname.1.2.6.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/stackexchange.redis.strongname/1.2.6/stackexchange.redis.strongname.1.2.6.nupkg 5ms
+Installed SimpleInjector 4.4.2 from https://api.nuget.org/v3/index.json with content hash lqf0X5yJ4IYuU9UJkrFepewTfh2gNG3jvjSjN1Pj9GrHeqP5IkptId+/bxSthruvSBrWErfx34Q68NjvJq4X6w==.
+Adding package 'SimpleInjector.4.4.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'SimpleInjector.4.4.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package System.ValueTuple.4.5.0.
+  GET https://api.nuget.org/v3-flatcontainer/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg 5ms
+Installed StackExchange.Redis.StrongName 1.2.6 from https://api.nuget.org/v3/index.json with content hash UFmT1/JYu1PLiRwkyvEPVHk/tVTJa8Ka2rb9yzidzDoQARvhBVRpaWUeaP81373v54jupDBvAoGHGl0EY/HphQ==.
+Adding package 'StackExchange.Redis.StrongName.1.2.6' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'StackExchange.Redis.StrongName.1.2.6' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package linq2db.2.6.0.
+  GET https://api.nuget.org/v3-flatcontainer/linq2db/2.6.0/linq2db.2.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/linq2db/2.6.0/linq2db.2.6.0.nupkg 73ms
+Installed System.ValueTuple 4.5.0 from https://api.nuget.org/v3/index.json with content hash okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==.
+Adding package 'System.ValueTuple.4.5.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'System.ValueTuple.4.5.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package MiniProfiler.3.2.0.157.
+  GET https://api.nuget.org/v3-flatcontainer/miniprofiler/3.2.0.157/miniprofiler.3.2.0.157.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/miniprofiler/3.2.0.157/miniprofiler.3.2.0.157.nupkg 5ms
+Installed MiniProfiler 3.2.0.157 from https://api.nuget.org/v3/index.json with content hash oF44Erqo3kocAljh884cbwh7TnJz86kBLYMNh7cRHdzpB/A3ekq+HnBOd+v939GsneyUVqKtCIFXrMLbFOIVFQ==.
+Adding package 'MiniProfiler.3.2.0.157' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'MiniProfiler.3.2.0.157' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package DotNetZip.1.13.3.
+  GET https://api.nuget.org/v3-flatcontainer/dotnetzip/1.13.3/dotnetzip.1.13.3.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/dotnetzip/1.13.3/dotnetzip.1.13.3.nupkg 5ms
+Installed DotNetZip 1.13.3 from https://api.nuget.org/v3/index.json with content hash URP6Eo8RZ9E8MapQaRDu2Sa7oWf+0M7OrZGPM4H22P64oMiGfGIh7gJqUVX2CBR0i5zjvDvOIwKwHDHLLL6w3Q==.
+Adding package 'DotNetZip.1.13.3' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'DotNetZip.1.13.3' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Ever.y.2018.10.15.1.
+  GET https://api.nuget.org/v3-flatcontainer/ever.y/2018.10.15.1/ever.y.2018.10.15.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/ever.y/2018.10.15.1/ever.y.2018.10.15.1.nupkg 102ms
+Installed Ever.y 2018.10.15.1 from https://api.nuget.org/v3/index.json with content hash v53LDpFS1E/cL/qMA9y0AotRwdBboSk/haYWsAkmRXgzAuVn2yVp26pF3yH14admCNZhW6iNtAvMGHTtuabljQ==.
+Adding package 'Ever.y.2018.10.15.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Ever.y.2018.10.15.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package FakeO.1.0.5302.23069.
+  GET https://api.nuget.org/v3-flatcontainer/fakeo/1.0.5302.23069/fakeo.1.0.5302.23069.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/fakeo/1.0.5302.23069/fakeo.1.0.5302.23069.nupkg 6ms
+Installed FakeO 1.0.5302.23069 from https://api.nuget.org/v3/index.json with content hash awESmwyMi21b37jotuMncm0N2zOkbQdVU9DtZXwpMPB3ECppd5/Uj2PK57eOBC8XP4F0bi/UyWlIrQu+6Iy+3A==.
+Adding package 'FakeO.1.0.5302.23069' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'FakeO.1.0.5302.23069' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package FluentScheduler.5.3.0.
+  GET https://api.nuget.org/v3-flatcontainer/fluentscheduler/5.3.0/fluentscheduler.5.3.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/fluentscheduler/5.3.0/fluentscheduler.5.3.0.nupkg 3ms
+Installed FluentScheduler 5.3.0 from https://api.nuget.org/v3/index.json with content hash XBLwqw3FFdkG6qIrxg7M9mIsigZje+qKTinWZWfyr47IN6O/0z6fFUoQCVEBvY0lk1puf4hU0VnVhN/kPNZL+A==.
+Adding package 'FluentScheduler.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'FluentScheduler.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package iTextSharp-LGPL.4.1.6.
+  GET https://api.nuget.org/v3-flatcontainer/itextsharp-lgpl/4.1.6/itextsharp-lgpl.4.1.6.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/itextsharp-lgpl/4.1.6/itextsharp-lgpl.4.1.6.nupkg 5ms
+Installed linq2db 2.6.0 from https://api.nuget.org/v3/index.json with content hash jJRwE9nv/0OxTloobVL2D+ld2lbDeUUpX3tZY9NURO8CMkooqFiZWb1+v5g/fcN47pC9aI3mchL9mYfOdBWq5g==.
+Adding package 'linq2db.2.6.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'linq2db.2.6.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package RestSharp.106.5.4.
+  GET https://api.nuget.org/v3-flatcontainer/restsharp/106.5.4/restsharp.106.5.4.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/restsharp/106.5.4/restsharp.106.5.4.nupkg 3ms
+Installed iTextSharp-LGPL 4.1.6 from https://api.nuget.org/v3/index.json with content hash 35STyoGKJOX1oTUWHOzn8/I1NXQMbkxKZfBsYwj8ZjOICVEZIi88wfOekQbYeU6MK0VOoZrMMO1e7KQVjJSIxQ==.
+Adding package 'iTextSharp-LGPL.4.1.6' to folder 'D:\a\1\s\Source\Solutions\packages'
+Installed RestSharp 106.5.4 from https://api.nuget.org/v3/index.json with content hash AOAzWW/L0YNxOLjc2foBmKFRBGNshfKXlpQrWtX9U5fArZsuiz9o9tb2QsY6uXtMEtRdKJcj3J2Mw4L6UJVaAA==.
+Adding package 'RestSharp.106.5.4' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'iTextSharp-LGPL.4.1.6' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package SmartFormat.NET.2.3.1.1.
+  GET https://api.nuget.org/v3-flatcontainer/smartformat.net/2.3.1.1/smartformat.net.2.3.1.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/smartformat.net/2.3.1.1/smartformat.net.2.3.1.1.nupkg 4ms
+Added package 'RestSharp.106.5.4' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package SSH.NET.2016.1.0.
+  GET https://api.nuget.org/v3-flatcontainer/ssh.net/2016.1.0/ssh.net.2016.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/ssh.net/2016.1.0/ssh.net.2016.1.0.nupkg 5ms
+Installed SmartFormat.NET 2.3.1.1 from https://api.nuget.org/v3/index.json with content hash d7IVskTXPSGDPhrOusZ2NoA5NOt35M0e50t80x3NTiotpFL6hGiEbc3D1Eusz4Y7eyweF2mO1sVulBrjSBeUUQ==.
+Adding package 'SmartFormat.NET.2.3.1.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'SmartFormat.NET.2.3.1.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package AutoMapper.6.2.2.
+  GET https://api.nuget.org/v3-flatcontainer/automapper/6.2.2/automapper.6.2.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/automapper/6.2.2/automapper.6.2.2.nupkg 3ms
+Installed AutoMapper 6.2.2 from https://api.nuget.org/v3/index.json with content hash eGKcnJdoF5rYMWPUaSPtlWdvua9xw4hnQN5kM/X4AXLGKghrtPIaMv+RYoA3sj0kyZ3X6wZ1Qj67F+u0pCCPaw==.
+Adding package 'AutoMapper.6.2.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'AutoMapper.6.2.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.AspNet.WebApi.5.2.7.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi/5.2.7/microsoft.aspnet.webapi.5.2.7.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi/5.2.7/microsoft.aspnet.webapi.5.2.7.nupkg 5ms
+Installed Microsoft.AspNet.WebApi 5.2.7 from https://api.nuget.org/v3/index.json with content hash r+nQLBQ857hw8Mfb5hrlMwr0nb7BE1Fp12LsSIZ9g6NT/hTZj8CYUi2UREfywIsGPQ4EIx14oWp8QPRps/i5CA==.
+Adding package 'Microsoft.AspNet.WebApi.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.AspNet.WebApi.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.AspNet.WebApi.Client.5.2.7.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.client/5.2.7/microsoft.aspnet.webapi.client.5.2.7.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.client/5.2.7/microsoft.aspnet.webapi.client.5.2.7.nupkg 3ms
+Installed SSH.NET 2016.1.0 from https://api.nuget.org/v3/index.json with content hash b0fcFFOE044KNRhq1uGujmK04ab+OzA9xARdeVCoZrY6I4D1IIaR6dn6qBIa+er4bJapGBhznDitwcRQpSRC0w==.
+Adding package 'SSH.NET.2016.1.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'SSH.NET.2016.1.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.AspNet.WebApi.Core.5.2.7.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.core/5.2.7/microsoft.aspnet.webapi.core.5.2.7.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.core/5.2.7/microsoft.aspnet.webapi.core.5.2.7.nupkg 5ms
+Installed Microsoft.AspNet.WebApi.Client 5.2.7 from https://api.nuget.org/v3/index.json with content hash /76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==.
+Adding package 'Microsoft.AspNet.WebApi.Client.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.AspNet.WebApi.Client.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.AspNet.WebApi.WebHost.5.2.7.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.webhost/5.2.7/microsoft.aspnet.webapi.webhost.5.2.7.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.webhost/5.2.7/microsoft.aspnet.webapi.webhost.5.2.7.nupkg 6ms
+Installed Microsoft.AspNet.WebApi.Core 5.2.7 from https://api.nuget.org/v3/index.json with content hash gM2QzApnHdy1FbKUJ/ROGJSm69P2G+HMoVd/t5Vq1O/zZ5TI4IKC9PX6nUfRt/NHgebZOIWHpB4/4K4inuy4yQ==.
+Adding package 'Microsoft.AspNet.WebApi.Core.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.AspNet.WebApi.Core.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.Web.Infrastructure.1.0.0.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.web.infrastructure/1.0.0/microsoft.web.infrastructure.1.0.0.nupkg
+Installed Microsoft.AspNet.WebApi.WebHost 5.2.7 from https://api.nuget.org/v3/index.json with content hash m3TyD7R/cmbfXqkfgcnE0J/UEKklcPP5gsXR96//vLx2kTnsxuOqNlulJLl+Oto4fZMvhVPFZVR+KG9cLZM/PA==.
+Adding package 'Microsoft.AspNet.WebApi.WebHost.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.web.infrastructure/1.0.0/microsoft.web.infrastructure.1.0.0.nupkg 5ms
+Added package 'Microsoft.AspNet.WebApi.WebHost.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package AuthorizeNet.1.9.7.
+  GET https://api.nuget.org/v3-flatcontainer/authorizenet/1.9.7/authorizenet.1.9.7.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/authorizenet/1.9.7/authorizenet.1.9.7.nupkg 5ms
+Installed Microsoft.Web.Infrastructure 1.0.0.0 from https://api.nuget.org/v3/index.json with content hash FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==.
+Adding package 'Microsoft.Web.Infrastructure.1.0.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.Web.Infrastructure.1.0.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Antlr.3.5.0.2.
+  GET https://api.nuget.org/v3-flatcontainer/antlr/3.5.0.2/antlr.3.5.0.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/antlr/3.5.0.2/antlr.3.5.0.2.nupkg 5ms
+Installed AuthorizeNet 1.9.7 from https://api.nuget.org/v3/index.json with content hash IAx1HMKotiGzTZlltIKEAWZYQ1nzsLyOya2kY7iV4HvvoVziG10+YqZytIvikQxalI+Fa5xJ0OHnOrl/GJyOlg==.
+Adding package 'AuthorizeNet.1.9.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'AuthorizeNet.1.9.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package FromHeaderAttribute.2.0.4.
+  GET https://api.nuget.org/v3-flatcontainer/fromheaderattribute/2.0.4/fromheaderattribute.2.0.4.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/fromheaderattribute/2.0.4/fromheaderattribute.2.0.4.nupkg 5ms
+Installed FromHeaderAttribute 2.0.4 from https://api.nuget.org/v3/index.json with content hash 3ahKB+yJ/BBa2A7neyUOCDxhh9D9dCZsRQQ3PBmkgmLL+ACK3G/EQ6WwQwneObbR63t6m5bgPynDLJBrkkBybA==.
+Adding package 'FromHeaderAttribute.2.0.4' to folder 'D:\a\1\s\Source\Solutions\packages'
+Installed Antlr 3.5.0.2 from https://api.nuget.org/v3/index.json with content hash CSfrVuDVMx3OrQhT84zed+tOdM1clljyRLWWlQM22fJsmG836RVDGQlE6tzysXh8X8p9UjkHbLr6OqEIVhtdEA==.
+Added package 'FromHeaderAttribute.2.0.4' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package jose-jwt.2.4.0.
+Adding package 'Antlr.3.5.0.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+  GET https://api.nuget.org/v3-flatcontainer/jose-jwt/2.4.0/jose-jwt.2.4.0.nupkg
+Added package 'Antlr.3.5.0.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.AspNet.Mvc.5.2.7.
+  OK https://api.nuget.org/v3-flatcontainer/jose-jwt/2.4.0/jose-jwt.2.4.0.nupkg 5ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.mvc/5.2.7/microsoft.aspnet.mvc.5.2.7.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.mvc/5.2.7/microsoft.aspnet.mvc.5.2.7.nupkg 5ms
+Installed jose-jwt 2.4.0 from https://api.nuget.org/v3/index.json with content hash 3rhpWfkgOO8TBKXVYTPHSVpkTEqThQO/RJ75NBJ7Xqw37jzbhRgsECIlXbI5uAwlmCW/5jKuyoDqrobClkitLQ==.
+Adding package 'jose-jwt.2.4.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'jose-jwt.2.4.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.AspNet.Razor.3.2.7.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.razor/3.2.7/microsoft.aspnet.razor.3.2.7.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.razor/3.2.7/microsoft.aspnet.razor.3.2.7.nupkg 5ms
+Installed Microsoft.AspNet.Mvc 5.2.7 from https://api.nuget.org/v3/index.json with content hash m3hUsn48k6Qb5El9A8naTwGTLCdSQKGSpGweqIfiVKltGJzAJJxuXvhhaQQtLCGg3i5V88iGjz0JG72/tlFKlg==.
+Adding package 'Microsoft.AspNet.Mvc.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.AspNet.Mvc.5.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.AspNet.Web.Optimization.1.1.3.
+Installed Microsoft.AspNet.Razor 3.2.7 from https://api.nuget.org/v3/index.json with content hash BpWEZ+Ys7g9VAkbAfpG5jr5A1fKcmadCCXv3fYfps5YfTVABJIGV4uc9yvmXKxsNsjL+BzDld2gs+xtgT2gg1g==.
+Adding package 'Microsoft.AspNet.Razor.3.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.web.optimization/1.1.3/microsoft.aspnet.web.optimization.1.1.3.nupkg
+Added package 'Microsoft.AspNet.Razor.3.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.AspNet.WebPages.3.2.7.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webpages/3.2.7/microsoft.aspnet.webpages.3.2.7.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webpages/3.2.7/microsoft.aspnet.webpages.3.2.7.nupkg 4ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.web.optimization/1.1.3/microsoft.aspnet.web.optimization.1.1.3.nupkg 13ms
+Installed Microsoft.AspNet.Web.Optimization 1.1.3 from https://api.nuget.org/v3/index.json with content hash TWKKpTWEdB8jXp2Vl2TXNKW30GBQg6nnh0y8iZWmGY5c1XY4f649vfDslNHsCsvk9JZxc1Rkm/UGDdfq4gjWRQ==.
+Adding package 'Microsoft.AspNet.Web.Optimization.1.1.3' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.AspNet.Web.Optimization.1.1.3' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.IdentityModel.JsonWebTokens.5.3.0.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/5.3.0/microsoft.identitymodel.jsonwebtokens.5.3.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/5.3.0/microsoft.identitymodel.jsonwebtokens.5.3.0.nupkg 6ms
+Installed Microsoft.AspNet.WebPages 3.2.7 from https://api.nuget.org/v3/index.json with content hash 2jwZFB7PvY+tbdz0ZP4iEo7gMrJxkCQUzoGLh6swUc6ZXl6DoKyDslmGcC/j9PFmJXCRMVIqtRorlPSMU2DuRA==.
+Adding package 'Microsoft.AspNet.WebPages.3.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.AspNet.WebPages.3.2.7' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.IdentityModel.Logging.5.3.0.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/5.3.0/microsoft.identitymodel.logging.5.3.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/5.3.0/microsoft.identitymodel.logging.5.3.0.nupkg 5ms
+Installed Microsoft.IdentityModel.JsonWebTokens 5.3.0 from https://api.nuget.org/v3/index.json with content hash 5LW5VYvGZLvrbEGxyaE6dSQhT1B5frnpwX/c4/PWrNXeuJ6GkYmiOPf2u5Iwk1qQXPTvDedwEfnBg+i/0cFAyA==.
+Adding package 'Microsoft.IdentityModel.JsonWebTokens.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.IdentityModel.JsonWebTokens.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Microsoft.IdentityModel.Tokens.5.3.0.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/5.3.0/microsoft.identitymodel.tokens.5.3.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/5.3.0/microsoft.identitymodel.tokens.5.3.0.nupkg 3ms
+Installed Microsoft.IdentityModel.Logging 5.3.0 from https://api.nuget.org/v3/index.json with content hash o+bBauEMOi6ZI0MlJEC69Sw9UPwKLFmN+lD942g9UCx5pfiLFvJBKp8OPmxtGFL02ZxzXCIUyhyKn85izBDsnQ==.
+Adding package 'Microsoft.IdentityModel.Logging.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Microsoft.IdentityModel.Logging.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package MiniProfiler.MVC4.3.0.11.
+  GET https://api.nuget.org/v3-flatcontainer/miniprofiler.mvc4/3.0.11/miniprofiler.mvc4.3.0.11.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/miniprofiler.mvc4/3.0.11/miniprofiler.mvc4.3.0.11.nupkg 5ms
+Installed MiniProfiler.MVC4 3.0.11 from https://api.nuget.org/v3/index.json with content hash vd5Us2JLYRnj0s7un2jyZ1zh8swlBxV3QuXg71kZhfVkrv6dzb4iQIAuqEN1usQxI+kdpCcwRaPthPpb7tNg5A==.
+Adding package 'MiniProfiler.MVC4.3.0.11' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'MiniProfiler.MVC4.3.0.11' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Strathweb.CacheOutput.WebApi2.0.10.0.
+  GET https://api.nuget.org/v3-flatcontainer/strathweb.cacheoutput.webapi2/0.10.0/strathweb.cacheoutput.webapi2.0.10.0.nupkg
+Installed Microsoft.IdentityModel.Tokens 5.3.0 from https://api.nuget.org/v3/index.json with content hash /piauST4FL0qzVI6oqLWxqhFReg12KwVGy0jRlnVOpGMeOVSKdtNVtHsN/hARc25hOOPEp9WKMce5ILzyMx/tQ==.
+Adding package 'Microsoft.IdentityModel.Tokens.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+  OK https://api.nuget.org/v3-flatcontainer/strathweb.cacheoutput.webapi2/0.10.0/strathweb.cacheoutput.webapi2.0.10.0.nupkg 89ms
+Added package 'Microsoft.IdentityModel.Tokens.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Swagger-Net.8.3.20.403.
+  GET https://api.nuget.org/v3-flatcontainer/swagger-net/8.3.20.403/swagger-net.8.3.20.403.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/swagger-net/8.3.20.403/swagger-net.8.3.20.403.nupkg 5ms
+Installed Strathweb.CacheOutput.WebApi2 0.10.0 from https://api.nuget.org/v3/index.json with content hash DqtSyw5LC23lmzm52MsZVsc4D96Au68+UkYZ+0dBYWGXlraRxU6iM1bk5JRHqcRwR/h3TbhXGX3dtkrJF0y0Zg==.
+Adding package 'Strathweb.CacheOutput.WebApi2.0.10.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Strathweb.CacheOutput.WebApi2.0.10.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package System.IdentityModel.Tokens.Jwt.5.3.0.
+  GET https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/5.3.0/system.identitymodel.tokens.jwt.5.3.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/5.3.0/system.identitymodel.tokens.jwt.5.3.0.nupkg 3ms
+Installed Swagger-Net 8.3.20.403 from https://api.nuget.org/v3/index.json with content hash Llli8Y2Uc62JRub1rw5X4vigq4o+hl2uSZEShAYCx6Xh9jdG5EOVXqHkPpzuihsua8w0xMixvkevAtkH59ts+w==.
+Adding package 'Swagger-Net.8.3.20.403' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Swagger-Net.8.3.20.403' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package WebActivatorEx.2.0.0.
+  GET https://api.nuget.org/v3-flatcontainer/webactivatorex/2.0.0/webactivatorex.2.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/webactivatorex/2.0.0/webactivatorex.2.0.0.nupkg 5ms
+Installed WebActivatorEx 2.0 from https://api.nuget.org/v3/index.json with content hash B3ZbOEaGCqa7BLjZZw6wqprOJJMvP39h7Lr5ADkJOCPKHppAaCre34kR63/gfgpM4htzTfgm/pEw7r7qqqMgIA==.
+Adding package 'WebActivatorEx.2.0.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'WebActivatorEx.2.0.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package WebGrease.1.6.0.
+  GET https://api.nuget.org/v3-flatcontainer/webgrease/1.6.0/webgrease.1.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/webgrease/1.6.0/webgrease.1.6.0.nupkg 5ms
+Installed System.IdentityModel.Tokens.Jwt 5.3.0 from https://api.nuget.org/v3/index.json with content hash EdcMk+36u9gQtbwTiPQ7ckIfiADBwOmCZ6rGD2rfkaozIdW1t7vbXk/FPVAu2r9KgCQZ5245Z+P0YMM/0Q0G2g==.
+Adding package 'System.IdentityModel.Tokens.Jwt.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'System.IdentityModel.Tokens.Jwt.5.3.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package LINQtoCSV.1.5.0.
+  GET https://api.nuget.org/v3-flatcontainer/linqtocsv/1.5.0/linqtocsv.1.5.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/linqtocsv/1.5.0/linqtocsv.1.5.0.nupkg 3ms
+Installed WebGrease 1.6.0 from https://api.nuget.org/v3/index.json with content hash 1d29edoh4IZPLig82coowiPBS1ltxT97PwEIkOk0dHqtJwD9v5C7gPm6Ot1hKHT86otKm04oDQ00x5c+PyVyxw==.
+Adding package 'WebGrease.1.6.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Installed LINQtoCSV 1.5.0.0 from https://api.nuget.org/v3/index.json with content hash R3FWKGV326oWhEIJFgBQvJyeEs7ylViAMjTYs1YetwVdGfbDGf465xfLaxUxePwF/8Tcajt/1Llj3exhYL2xhQ==.
+Adding package 'LINQtoCSV.1.5.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'WebGrease.1.6.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'LINQtoCSV.1.5.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package MiniProfiler.Windows.1.0.0.
+Restoring NuGet package Castle.Core.4.3.1.
+  GET https://api.nuget.org/v3-flatcontainer/castle.core/4.3.1/castle.core.4.3.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/miniprofiler.windows/1.0.0/miniprofiler.windows.1.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/castle.core/4.3.1/castle.core.4.3.1.nupkg 5ms
+  OK https://api.nuget.org/v3-flatcontainer/miniprofiler.windows/1.0.0/miniprofiler.windows.1.0.0.nupkg 31ms
+Installed MiniProfiler.Windows 1.0.0.0 from https://api.nuget.org/v3/index.json with content hash WMEoYtqekiy1QUhJ7bjQbBGBUzmMRLxs3IuES8gPQcyjVmqlgrR4c8lgsqBlpSzwEjB2tLoku2pwuLv8hytpMA==.
+Adding package 'MiniProfiler.Windows.1.0.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'MiniProfiler.Windows.1.0.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package Moq.4.10.1.
+  GET https://api.nuget.org/v3-flatcontainer/moq/4.10.1/moq.4.10.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/moq/4.10.1/moq.4.10.1.nupkg 3ms
+Installed Moq 4.10.1 from https://api.nuget.org/v3/index.json with content hash 9VA2mB8JELXG0aDGABn2UlHB0hB8E9LFriDt4ukeS1noCEzEkQ0wpDo+w1qJxLYyhY+Z3Kf+2OgbebFL9XtLjg==.
+Adding package 'Moq.4.10.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'Moq.4.10.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package System.Runtime.CompilerServices.Unsafe.4.5.2.
+  GET https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg
+Installed Castle.Core 4.3.1 from https://api.nuget.org/v3/index.json with content hash 8Y/eTr6GTElAGV7eAmJuhfLhGdFpNvaNrQ9UQYDScziLmX+/BLGM+9eQr0IcdNDcPN0ADmbtwT6MgecGKy4obw==.
+Adding package 'Castle.Core.4.3.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+  OK https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg 5ms
+Added package 'Castle.Core.4.3.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package System.Threading.Tasks.Extensions.4.5.1.
+  GET https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.1/system.threading.tasks.extensions.4.5.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.1/system.threading.tasks.extensions.4.5.1.nupkg 6ms
+Installed System.Runtime.CompilerServices.Unsafe 4.5.2 from https://api.nuget.org/v3/index.json with content hash wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==.
+Adding package 'System.Runtime.CompilerServices.Unsafe.4.5.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'System.Runtime.CompilerServices.Unsafe.4.5.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package CsvHelper.12.1.2.
+  GET https://api.nuget.org/v3-flatcontainer/csvhelper/12.1.2/csvhelper.12.1.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/csvhelper/12.1.2/csvhelper.12.1.2.nupkg 5ms
+Installed System.Threading.Tasks.Extensions 4.5.1 from https://api.nuget.org/v3/index.json with content hash WSKUTtLhPR8gllzIWO2x6l4lmAIfbyMAiTlyXAis4QBDonXK4b4S6F8zGARX4/P8wH3DH+sLdhamCiHn+fTU1A==.
+Adding package 'System.Threading.Tasks.Extensions.4.5.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+Installed CsvHelper 12.1.2 from https://api.nuget.org/v3/index.json with content hash SpMsKw74xuAMsYZ+tSQsHF9UYlZm6E+LBSwDPukGCy1dYLVJwM6ZR7gFhKWDMh7OR/1ba8t4UV/RraMJKx+mog==.
+Adding package 'CsvHelper.12.1.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'CsvHelper.12.1.2' to folder 'D:\a\1\s\Source\Solutions\packages'
+Restoring NuGet package System.ValueTuple.4.4.0.
+  GET https://api.nuget.org/v3-flatcontainer/system.valuetuple/4.4.0/system.valuetuple.4.4.0.nupkg
+Added package 'System.Threading.Tasks.Extensions.4.5.1' to folder 'D:\a\1\s\Source\Solutions\packages'
+  OK https://api.nuget.org/v3-flatcontainer/system.valuetuple/4.4.0/system.valuetuple.4.4.0.nupkg 6ms
+Installed System.ValueTuple 4.4.0 from https://api.nuget.org/v3/index.json with content hash BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==.
+Adding package 'System.ValueTuple.4.4.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+Added package 'System.ValueTuple.4.4.0' to folder 'D:\a\1\s\Source\Solutions\packages'
+
+NuGet Config files used:
+    C:\Users\VssAdministrator\AppData\Roaming\NuGet\NuGet.Config
+    C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.FallbackLocation.config
+    C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.Offline.config
+    C:\Program Files (x86)\NuGet\Config\Xamarin.Offline.config
+
+Feeds used:
+    C:\Users\VssAdministrator\.nuget\packages\
+    https://api.nuget.org/v3/index.json
+    C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+
+Installed:
+    64 package(s) to packages.config projects
+Building YLO.All:
+Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2203,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [D:\a\1\s\Source\Framework\Foundation\Framework.Foundation.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2203,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "System.Runtime.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [D:\a\1\s\Source\Framework\Foundation\Framework.Foundation.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2203,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "System.Runtime.InteropServices, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [D:\a\1\s\Source\Framework\Foundation\Framework.Foundation.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2203,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [D:\a\1\s\Source\Framework\Foundation\Framework.Foundation.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2203,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [D:\a\1\s\Source\Framework\Foundation\Framework.Foundation.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2203,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [D:\a\1\s\Source\Framework\Foundation\Framework.Foundation.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2203,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [D:\a\1\s\Source\Framework\Foundation\Framework.Foundation.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2203,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [D:\a\1\s\Source\Framework\Foundation\Framework.Foundation.csproj]
+  Framework.Foundation -> D:\a\1\s\Source\Framework\Foundation\bin\Release\Framework.Foundation.dll
+  Framework.Common -> D:\a\1\s\Source\Framework\Common\bin\Release\Framework.Common.dll
+  Framework.Data -> D:\a\1\s\Source\Framework\Data\bin\Release\Framework.Data.dll
+  Framework.Business -> D:\a\1\s\Source\Framework\Business\bin\Release\Framework.Business.dll
+  Framework.Web -> D:\a\1\s\Source\Framework\Web\bin\Release\Framework.Web.dll
+  YLO.Common.Shared -> D:\a\1\s\Source\YLO\Common\Shared\bin\Release\YLO.Common.Shared.dll
+  YLO.Business.Shared -> D:\a\1\s\Source\YLO\Business\Shared\bin\Release\YLO.Business.Shared.dll
+  YLO.Data.Shared -> D:\a\1\s\Source\YLO\Data\Shared\bin\Release\YLO.Data.Shared.dll
+  YLO.Web.Shared -> D:\a\1\s\Source\YLO\Web\Shared\bin\Release\YLO.Web.Shared.dll
+  YLO.DI.Shared -> D:\a\1\s\Source\YLO\DI\Shared\bin\Release\YLO.DI.Shared.dll
+  YLO.Service.Index -> D:\a\1\s\Source\YLO\Service\Indexer\bin\Release\YLO.Service.Index.exe
+  YLO.Service.Ingester -> D:\a\1\s\Source\YLO\Service\Ingester\bin\Release\YLO.Service.Ingester.exe
+  YLO.Service.Encoder -> D:\a\1\s\Source\YLO\Service\Encoder\bin\Release\YLO.Service.Encoder.exe
+  YLO.Service.Coordinator -> D:\a\1\s\Source\YLO\Service\Coordinator\bin\Release\YLO.Service.Coordinator.exe
+  YLO.WebService.WinksUrlService -> D:\a\1\s\Source\YLO\WebService\WinksUrlService\bin\YLO.WebService.WinksUrlService.dll
+  YLO.Service.MassUploader.Processor -> D:\a\1\s\Source\YLO\Service\MassUploader\Processor\bin\Release\YLO.Service.MassUploader.Processor.exe
+  YLO.Web.YLO -> D:\a\1\s\Source\YLO\Web\YLO\bin\YLO.Web.YLO.dll
+  Framework.Windows -> D:\a\1\s\Source\Framework\Windows\bin\Release\Framework.Windows.dll
+  YLO.Windows.MassUploader -> D:\a\1\s\Source\YLO\Windows\MassUploader\bin\Release\YLO.Windows.MassUploader.exe
+  YLO.Console.Purge -> D:\a\1\s\Source\YLO\Console\Purge\bin\Release\YLO.Console.Purge.exe
+  YLO.Console.Reports -> D:\a\1\s\Source\YLO\Console\Reports\bin\Release\YLO.Console.Reports.exe
+  YLO.Service.JobServer -> D:\a\1\s\Source\YLO\Service\JobServer\bin\Release\YLO.Service.JobServer.exe
+  YLO.WebService.BitsNotification -> D:\a\1\s\Source\YLO\WebService\BitsNotification\bin\YLO.WebService.BitsNotification.dll
+  YLO.Console.Jobs.MediaInfoUpdater -> D:\a\1\s\Source\YLO\Console\Jobs\FileSizeUpdater\bin\Release\YLO.Console.Jobs.MediaInfoUpdater.exe
+  YLO.Console.Jobs.SubmitVideoJobs -> D:\a\1\s\Source\YLO\Console\Jobs\SubmitVideoJobs\bin\Release\YLO.Console.Jobs.SubmitVideoJobs.exe
+  YLO.Console.CmdLineIndexer -> D:\a\1\s\Source\YLO\Console\CmdLineIndexer\bin\Release\YLO.Console.CmdLineIndexer.exe
+  SearchTester -> D:\a\1\s\Source\YLO\Test\IndexAndSearch\SearchTester\bin\Release\SearchTester.exe
+  YLO.Tools.Windows.YLOSettings -> D:\a\1\s\Source\YLO\Tools\Windows\YLOSettings\bin\Release\YLO.Tools.Windows.YLOSettings.exe
+  GridViewExtensions -> D:\a\1\s\Source\YLO\Tools\Windows\LogExplorer\GridExtensions\bin\Release\GridViewExtensions.dll
+  LogExplorer -> D:\a\1\s\Source\YLO\Tools\Windows\LogExplorer\LogExplorer\bin\Release\LogExplorer.exe
+  IndexTester -> D:\a\1\s\Source\YLO\Test\IndexAndSearch\IndexTester\bin\Release\IndexTester.exe
+  YLO.Console.Jobs.SyncTranscripts -> D:\a\1\s\Source\YLO\Console\Jobs\SyncTranscripts\bin\Release\YLO.Console.Jobs.SyncTranscripts.exe
+  YLO.Console.Tools.RestructureVideoDump -> D:\a\1\s\Source\YLO\Console\Tools\RestructureVideoDump\bin\Release\YLO.Console.Tools.RestructureVideoDump.exe
+  YLO.Console.Tools.UpdateFilePath -> D:\a\1\s\Source\YLO\Console\Tools\UpdateFilePath\bin\Release\YLO.Console.Tools.UpdateFilePath.exe
+  YLO.Console.Tools.FixDuplicateJobs -> D:\a\1\s\Source\YLO\Console\Tools\FixDuplicateJobs\bin\Release\YLO.Console.Tools.FixDuplicateJobs.exe
+  YLO.Console.Tools.TranscriptPopulator -> D:\a\1\s\Source\YLO\Console\Tools\TranscriptPopulator\bin\Release\YLO.Console.Tools.TranscriptPopulator.exe
+  YLO.Business.Test -> D:\a\1\s\Source\YLO\Business\Test\bin\Release\YLO.Business.Test.dll
+  YLO.Console.Jobs.Job -> D:\a\1\s\Source\YLO\Console\Jobs\Job\bin\Release\YLO.Console.Jobs.Job.exe
+  YLO.Web.DocumentServer.Html5Future -> D:\a\1\s\Source\YLO\Web\DocumentServer\Html5Future\bin\YLO.Web.DocumentServer.Html5Future.dll
+  YLO.Console.Tools.MoveData -> D:\a\1\s\Source\YLO\Console\Tools\MoveData\bin\Release\YLO.Console.Tools.MoveData.exe
+  YLO.Console.Tools.UpdateMediaNewPath -> D:\a\1\s\Source\YLO\Console\Tools\UpdateMediaNewPath\YLO.Console.Tools.UpdateMediaNewPath\bin\Release\YLO.Console.Tools.UpdateMediaNewPath.exe
+  FLSData -> D:\a\1\s\Source\LegacyYLO\Libraries\FLSData\bin\Release\FLSData.dll
+  DAL -> D:\a\1\s\Source\LegacyYLO\Libraries\DAL\bin\Release\DAL.dll
+  BLL -> D:\a\1\s\Source\LegacyYLO\Libraries\BLL\bin\Release\BLL.dll
+  Ylo.Web.Legacy -> D:\a\1\s\Source\LegacyYLO\Apps\Ylo.Web.Legacy\bin\YLO.Web.Legacy.dll
+  YLO.Console.Tools.ListInvalidMediaPaths -> D:\a\1\s\Source\YLO\Console\Tools\ListInvalidMediaPaths\bin\Release\YLO.Console.Tools.ListInvalidMediaPaths.exe
+  YLO.Console.Audit -> D:\a\1\s\Source\YLO\Console\Audit\bin\Release\YLO.Console.Audit.exe
+  MissingFilesAnalyser -> D:\a\1\s\Source\YLO\Tools\Console\MissingFilesAnalyser\bin\Release\MissingFilesAnalyser.exe
+  YLO.Console.Tools.PartnerDataExtractor -> D:\a\1\s\Source\YLO\Console\Tools\PartnerDataExtractor\bin\Release\YLO.Console.Tools.ExtractAWR.exe
+  YLO.Console.Tools.FixDuplicateJobNumberAndGuestUrl -> D:\a\1\s\Source\YLO\Console\Tools\FixDuplicateJobNumberAndGuestUrl\bin\Release\YLO.Console.Tools.FixDuplicateJobs.exe
+Using Innosetup path from - D:/a/1/s/Build/YLO/BuildScripts/tools/Tools.InnoSetup.6.0.2/tools/ISCC.exe
+Inno Setup Command-Line Compiler
+Copyright (C) 1997-2019 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2019 Martijn Laan
+Inno Setup Preprocessor
+Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+
+Compiler engine version: Inno Setup 6.0.2 (u)
+
+[ISPP] Preprocessing.
+[ISPP] Preprocessed.
+
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Reading file (WizardImageFile)
+   File: D:\a\1\s\Build\YLO\BuildScripts\tools\Tools.InnoSetup.6.0.2\tools\WIZMODERNIMAGE.BMP
+Reading file (WizardSmallImageFile)
+   File: D:\a\1\s\Build\YLO\BuildScripts\tools\Tools.InnoSetup.6.0.2\tools\WIZMODERNSMALLIMAGE.BMP
+Preparing Setup program executable
+Determining language code pages
+   File: D:\a\1\s\Build\YLO\BuildScripts\tools\Tools.InnoSetup.6.0.2\tools\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   File: D:\a\1\s\Build\YLO\BuildScripts\tools\Tools.InnoSetup.6.0.2\tools\Default.isl
+   Messages in script file
+Reading [Code] section
+Parsing [Icons] section, line 40
+Parsing [Icons] section, line 41
+Parsing [Icons] section, line 44
+Parsing [Icons] section, line 46
+Parsing [Run] section, line 49
+Parsing [Files] section, line 35
+Parsing [Files] section, line 36
+Parsing [Files] section, line 37
+Creating setup files
+   Compressing: D:\a\1\s\Build\YLO\Setup\..\..\..\Source\YLO\Windows\MassUploader\bin\Release\DotNetZip.dll
+   Compressing: D:\a\1\s\Build\YLO\Setup\..\..\..\Source\YLO\Windows\MassUploader\bin\Release\NLog.dll
+   Compressing: D:\a\1\s\Build\YLO\Setup\..\..\..\Source\YLO\Windows\MassUploader\bin\Release\YLO.Windows.MassUploader.exe
+   Compressing: D:\a\1\s\Build\YLO\Setup\version_number.txt
+   Compressing: D:\a\1\s\Build\YLO\Setup\..\..\..\Source\YLO\Windows\MassUploader\app.prod.config
+   Compressing Setup program executable
+   Updating version info
+
+Warning: Constant "pf" has been renamed. Use "commonpf" instead or consider using its "auto" form.
+Warning: The [Setup] section directive "PrivilegesRequired" is set to "admin" but per-user areas (userappdata) are used by the script. Regardless of the version of Windows, if the installation is running in administrative install mode then you should be careful about making any per-user area changes: such changes may not achieve what you are intending. See the "UsedUserAreasWarning" topic in help file for more information.
+
+Successful compile (1.000 sec). Resulting Setup program filename is:
+D:\a\1\s\Build\YLO\Setup\SetupFiles\SerparateInstallers\YLODocDepositUploaderSetup.exe
+
+========================================
+set-ylo-version
+========================================
+  ERROR [06/26/23 21:30:46:20] An unexpected error occurred:
+GitVersion.GitVersionException: Can't find commit 47756af3c7ca339501227f15fc6b5512afc26d50. Please ensure that the repository is an unshallow clone with `git fetch --unshallow`. ---> LibGit2Sharp.NotFoundException: object not found - no match for id (72fd494a294ae4be6c126cdc666df067bc606f09)
+
+========================================
+pack-ylo
+========================================
+  ERROR [06/26/23 21:30:47:08] An unexpected error occurred:
+GitVersion.GitVersionException: Can't find commit 47756af3c7ca339501227f15fc6b5512afc26d50. Please ensure that the repository is an unshallow clone with `git fetch --unshallow`. ---> LibGit2Sharp.NotFoundException: object not found - no match for id (72fd494a294ae4be6c126cdc666df067bc606f09)
+  ERROR [06/26/23 21:30:47:91] An unexpected error occurred:
+GitVersion.GitVersionException: Can't find commit 47756af3c7ca339501227f15fc6b5512afc26d50. Please ensure that the repository is an unshallow clone with `git fetch --unshallow`. ---> LibGit2Sharp.NotFoundException: object not found - no match for id (72fd494a294ae4be6c126cdc666df067bc606f09)
+  ERROR [06/26/23 21:30:48:79] An unexpected error occurred:
+GitVersion.GitVersionException: Can't find commit 47756af3c7ca339501227f15fc6b5512afc26d50. Please ensure that the repository is an unshallow clone with `git fetch --unshallow`. ---> LibGit2Sharp.NotFoundException: object not found - no match for id (72fd494a294ae4be6c126cdc666df067bc606f09)
+  ERROR [06/26/23 21:30:49:60] An unexpected error occurred:
+GitVersion.GitVersionException: Can't find commit 47756af3c7ca339501227f15fc6b5512afc26d50. Please ensure that the repository is an unshallow clone with `git fetch --unshallow`. ---> LibGit2Sharp.NotFoundException: object not found - no match for id (72fd494a294ae4be6c126cdc666df067bc606f09)
+  ERROR [06/26/23 21:30:50:38] An unexpected error occurred:
+GitVersion.GitVersionException: Can't find commit 47756af3c7ca339501227f15fc6b5512afc26d50. Please ensure that the repository is an unshallow clone with `git fetch --unshallow`. ---> LibGit2Sharp.NotFoundException: object not found - no match for id (72fd494a294ae4be6c126cdc666df067bc606f09)
+ Started Deleting Artifact folders...  Finished  in 00:00:00.0012500
+ Started Copying YLO Settings folders...  Finished  in 00:00:01.3515620
+ Started Copying Log Explorer folders...  Finished  in 00:00:01.0230630
+ Started Copying Massuploader Service folders...  Finished  in 00:00:02.4117119
+ Started Copying Massuploader App folders...  Finished  in 00:00:01.1058701
+ Started Copying Index Service folders...  Finished  in 00:00:02.4228038
+ Started Copying CommandLine Indexer folders...  Finished  in 00:00:02.4561446
+ Started Copying Search Tester folders...  Finished  in 00:00:02.5352555
+ Started Copying Ingest Service folders...  Finished  in 00:00:19.3694073
+ Started Copying Ingest Web folders...  Finished  in 00:00:03.5168768
+ Started Copying Bits Notification folders...  Finished  in 00:00:02.4715589
+ Started Copying Coordinator Service folders...  Finished  in 00:00:02.4658802
+ Started Copying Job Service folders...  Finished  in 00:00:29.1348901
+ Started Copying Encoder Service folders...  Finished  in 00:00:17.6524928
+ Started Copying YLO Web app folders...  Finished  in 00:01:44.9633536
+ Started Copying Html 5 Doc Viewer folders...  Finished  in 00:00:20.1460664
+
+Task                          Duration            
+--------------------------------------------------
+gitpull                       00:00:09.6136461    
+build-ylo                     00:02:44.6347772    
+set-ylo-version               00:00:00.8911225    
+pack-ylo                      00:03:37.1964833    
+--------------------------------------------------
+Total:                        00:06:32.3360291    
+
+========================================
+Default
+========================================
+
+Task                          Duration            
+--------------------------------------------------
+Command                       00:06:32.3568954    
+--------------------------------------------------
+Total:                        00:06:32.3569492    
+Finishing: Run script ci.bat
